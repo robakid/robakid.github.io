@@ -11,13 +11,13 @@
 <div class="celtra-ad-v3">
     <img src="data:image/png,celtra" style="display: none" onerror="
         (function(img) {
-            var params = {'clickUrl':'','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','externalAdServer':'Custom','tagVersion':'6'};
+            var params = {'clickUrl':'','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','externalAdServer':'Custom','tagVersion':'6', 'debug': 'all'};
             var req = document.createElement('script');
             req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
             params.clientTimestamp = new Date/1000;
             params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
             params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
-            var src = 'https://ads.mab.robakid.test/54fc6944/web.js?';
+            var src = 'http://ads.celtra.com/b5387ced/web.js?';
             for (var k in params) {
                 src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
             }
@@ -25,6 +25,7 @@
             img.parentNode.insertBefore(req, img.nextSibling);
         })(this);
     "/>
+</div>
 </div>
 <div style="height:800px;width:400px;background-color:blue;"></div>
 </body>
